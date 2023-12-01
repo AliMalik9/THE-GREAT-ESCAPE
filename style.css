@@ -1,0 +1,244 @@
+:root {
+  --mp: hsla(348, 91%, 92%, 1);
+  --bdp: hsla(338, 15%, 45%, 1);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "montserrat";
+  color: var(--mp);
+  background: var(--bdp);
+}
+#main {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  overflow: hidden;
+}
+
+#mtext{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  z-index: 999;
+}
+#mtext h1{
+  user-select: none;
+  white-space: nowrap;
+  font-size: 9vw;
+  font-family: "voyage";
+  text-transform: capitalize;
+  color: white;
+  font-weight: 400;
+  line-height: 1;
+}
+#mtext h3{
+  user-select: none;
+  white-space: nowrap;
+  font-size: 3vw;
+  font-family: "voyage";
+  text-transform: capitalize;
+  color: white;
+  font-weight: 400;
+  line-height: 1;
+}
+
+/* Navbar starts here */
+
+#nav {
+  width: 100%;
+  color: white;
+  /* background-color: black; */
+  display: flex;
+  align-items: center;
+  padding: 50px 60px;
+  gap: 120px;
+}
+#nav h3 {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+#nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  margin-left: 100px;
+}
+
+/* Left starts here */
+#left {
+  width: 45%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#leftcenterimg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44%;
+  height: 56%;
+  /* background: url(https://images.pexels.com/photos/7319029/pexels-photo-7319029.jpeg)center/cover; */
+  background: url(https://images.pexels.com/photos/4685034/pexels-photo-4685034.jpeg)
+    center/cover;
+}
+#leftcenterimg #text {
+  position: absolute;
+  top: 110%;
+  width: 100%;
+  display: flex;
+  color: white;
+}
+
+#text #parts {
+  width: 30%;
+}
+
+#text #parts h5 {
+  margin-bottom: 20px;
+}
+#text #para {
+  width: 70%;
+}
+#text #para p {
+  margin-top: -5px;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+#left #scroll {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: -10px;
+  left: 10%;
+  gap: 10px ;
+  transform: rotate(270deg);
+  transform-origin: center left;
+}
+
+#left #scroll h4 {
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 10px;
+}
+
+#left #scroll #line {
+  width: 150px;
+  height: 2px;
+  background-color: white;
+}
+
+/* Center starts here */
+
+#center {
+  width: 47%;
+  height: 100%;
+  /* background: url(https://images.pexels.com/photos/7319037/pexels-photo-7319037.jpeg) right/cover; */
+  background: url(https://images.pexels.com/photos/4685042/pexels-photo-4685042.jpeg) top left/cover;
+  position: relative;
+}
+
+#center #card{
+  width: 300px;
+  height:  200px;
+  background-color: #fff;
+  position: absolute;
+  right: -10%;
+  bottom: 5%;
+  display: flex;
+}
+#center #card #cicons{
+width: 30%;
+height: 100%;
+background-color: white;
+color: black;
+display: flex;
+flex-direction: column;
+align-items: center;
+font-size: 24px;
+justify-content: space-around;
+}
+#center #card #cimage{
+  width: 70%;
+  height: 100%;
+  /* background: url(https://images.pexels.com/photos/4685038/pexels-photo-4685038.jpeg) top/cover;
+  background: url(https://images.pexels.com/photos/4685039/pexels-photo-4685039.jpeg) top/cover; */
+  background: url(https://images.pexels.com/photos/19273126/pexels-photo-19273126/free-photo-of-beautyfull-woman-sunday.jpeg) top/cover;
+}
+
+#center #unexln {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 35%;
+  right: 0%;
+  gap: 16px ;
+}
+
+#center #unexln h4 {
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 10px;
+}
+
+#center #unexln #ulines {
+  width: 150px;
+  height: 3px;
+  display: flex;
+}
+#center #unexln #ulines #uline1 {
+  width: 50%;
+  background-color: black;
+}
+#center #unexln #ulines #uline2{
+  width: 50%;
+  background-color: white;
+}
+/* right starts here */
+
+#right {
+  width: 8%;
+  height: 100%;
+}
+#relem{
+  width: 100%;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(160, 54, 54);
+  flex-direction: column;
+  margin-left: 32px;
+}
+#relem #relemlinks{
+  display: flex;
+  gap: 30px;
+  transform:translateY(-260px) rotate(270deg);
+}
+#relem #relemlinks a{
+  font-weight: 400;
+  font-size: 12px;
+  color: white;
+  letter-spacing: 0.6px;
+  text-decoration: none;
+}
+#relem i{
+  margin-top: 40px;
+  font-size: 24px;
+  cursor: pointer;
+}
